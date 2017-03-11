@@ -1,5 +1,4 @@
 # Read Data into R 
-  setwd("/Users/danielhathaway/Desktop/R Analysis/Coursera/Exploratory Data Analysis/Week 1")
   file <- ("household_power_consumption.txt")
   df <- read.table(file, header = TRUE, sep = ";")
 
