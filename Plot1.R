@@ -11,14 +11,14 @@
                               "%d/%m/%Y %H:%M:%S") 
 
 # Create the Plot
-  sub.df$Globalactivepower <- as.numeric(sub.df$Global_active_power)
+  sub.df$global.active.power <- as.numeric(sub.df$Global_active_power)
   
   png(filename = "Plot1.png", width = 480, height = 480)
   
-  hist(sub.df$Globalactivepower, 
+  hist(x      = sub.df$global.active.power, 
        breaks = 13, 
-       col = "red", 
-       xlab = "Global Active Power (Kilowatts)",
-       main = "Global Active Power")
+       col    = "red", 
+       xlab   = "Global Active Power (Kilowatts)",
+       main   = "Global Active Power")
   
   dev.off()
