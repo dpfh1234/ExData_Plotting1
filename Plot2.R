@@ -10,15 +10,15 @@
                               "%d/%m/%Y %H:%M:%S") 
 
 # Create the Plot
-  sub.df$Globalactivepower <- as.numeric(sub.df$Global_active_power)
+  sub.df$global.active.power <- as.numeric(sub.df$Global_active_power)
   
   png("Plot2.png", width=480, height=480)
   
-  plot(sub.df$datetime, 
-       sub.df$Globalactivepower,
+  plot(x    = sub.df$datetime, 
+       y    = sub.df$global.active.power,
        type = "l",
-       xlab="", 
-       ylab="Global Active Power (kilowatts)")
+       xlab = "", 
+       ylab = "Global Active Power (kilowatts)")
   
   dev.off()
   
